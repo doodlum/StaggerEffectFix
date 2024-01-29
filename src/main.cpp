@@ -1,4 +1,4 @@
-﻿#include "Hooks.h"
+#include "Hooks.h"
 #include "Patches.h"
 
 DLLEXPORT bool SKSEAPI SKSEPlugin_Load(const SKSE::LoadInterface* a_skse)
@@ -14,7 +14,7 @@ DLLEXPORT bool SKSEAPI SKSEPlugin_Load(const SKSE::LoadInterface* a_skse)
 	//REL::Module::reset();
 	SKSE::Init(a_skse);
 
-	INFO("{} v{} loaded", Plugin::NAME, Plugin::Version);
+	INFO("{} v{} loaded", Plugin::NAME, Plugin::VERSION);
 
 	// do stuff
 	SDF::AddStaggerActorPatch::Install();
